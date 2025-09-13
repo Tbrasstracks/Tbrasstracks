@@ -11,15 +11,22 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            color: white; /* Added for better contrast with text */
         }
         .social-button {
-            padding: 50px 65px;
+            padding: 100px 130px;
             margin: 40px;
-            font-size: 1.9em;
+            font-size: 3.8em;
             background-color: white;
             border: none;
             border-radius: 20px;
             cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added for a 3D effect */
+            transition: transform 0.2s, box-shadow 0.2s; /* Added for a smooth hover effect */
+        }
+        .social-button:hover {
+            transform: scale(1.05); /* Slightly enlarges the button on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darkens the shadow on hover */
         }
     </style>
 </head>
@@ -31,3 +38,4 @@
     <button class="social-button" onclick="window.location.href='https://www.youtube.com/@Tbrasstracks'">YouTube</button>
 </body>
 </html>
+
