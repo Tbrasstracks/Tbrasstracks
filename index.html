@@ -4,38 +4,52 @@
     <title>Social Media Buttons</title>
     <style>
         body {
-            background-color: blue;
+            background-color: #000000; /* Schwarzer Hintergrund */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
-            color: white; /* Added for better contrast with text */
         }
         .social-button {
             padding: 100px 130px;
             margin: 40px;
             font-size: 3.8em;
-            background-color: white;
             border: none;
             border-radius: 20px;
             cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added for a 3D effect */
-            transition: transform 0.2s, box-shadow 0.2s; /* Added for a smooth hover effect */
+            color: white;
+            font-weight: bold; /* Schrift dicker */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .social-button:hover {
-            transform: scale(1.05); /* Slightly enlarges the button on hover */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darkens the shadow on hover */
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .tiktok {
+            background-color: #121212; /* Dunkleres Schwarz für den TikTok-Button */
+        }
+        .facebook {
+            background-color: #3b5998; /* Blau für Facebook */
+        }
+        .instagram {
+            background-color: #E1306C; /* Rosa für Instagram */
+        }
+        .whatsapp {
+            background-color: #25D366; /* Grün für WhatsApp */
+        }
+        .youtube {
+            background-color: #FF0000; /* Rot für YouTube */
         }
     </style>
 </head>
 <body>
-    <button class="social-button" onclick="window.location.href='https://www.tiktok.com/@tbrasstracks?_t=ZN-8zYz0ck9vvC&_r=1'">TikTok</button>
-    <button class="social-button" onclick="window.location.href='https://www.facebook.com/share/17CqpQMSVa/'">Facebook</button>
-    <button class="social-button" onclick="window.location.href='https://www.instagram.com/tbrasstracks?igsh=MThqN3ZsZjhwYW9sbA=='">Instagram</button>
-    <button class="social-button" onclick="window.location.href='https://whatsapp.com/channel/0029VbAso7H0LKZ4rlWOJ200'">WhatsApp</button>
-    <button class="social-button" onclick="window.location.href='https://www.youtube.com/@Tbrasstracks'">YouTube</button>
+    <button class="social-button tiktok" onclick="window.location.href='https://www.tiktok.com/@tbrasstracks?_t=ZN-8zYz0ck9vvC&_r=1'">TikTok</button>
+    <button class="social-button facebook" onclick="window.location.href='https://www.facebook.com/share/17CqpQMSVa/'">Facebook</button>
+    <button class="social-button instagram" onclick="window.location.href='https://www.instagram.com/tbrasstracks?igsh=MThqN3ZsZjhwYW9sbA=='">Instagram</button>
+    <button class="social-button whatsapp" onclick="window.location.href='https://whatsapp.com/channel/0029VbAso7H0LKZ4rlWOJ200'">WhatsApp</button>
+    <button class="social-button youtube" onclick="window.location.href='https://www.youtube.com/@Tbrasstracks'">YouTube</button>
 </body>
 </html>
-
